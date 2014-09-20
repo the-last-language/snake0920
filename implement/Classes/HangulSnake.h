@@ -2,9 +2,10 @@
 #define __HANGUL_SNAKE__
 
 /*
-	한글 스네이크의 몸통들을 정의하는 코드. 
-	한글 스네이크의 getter, setter와
-	init가 구현되어있다.
+	한글 스네이크에 대해 선언하는 코드.
+	다음 요소들이 선언되어 있다.
+	-한글 스네이크의 getter, setter
+	-그 외 cocos2d-x에 대한 init
 */
 
 #include <iostream>

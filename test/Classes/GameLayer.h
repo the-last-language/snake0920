@@ -24,42 +24,42 @@ public:
     virtual void update(float dt);
     CREATE_FUNC(GameLayer);
     
-    void SetApperance();
-    void SetSnake();
-    void SetDirection(Ref* psender,Direction direc);
-    void MoveStep();
-    bool OutofRange();
-    bool HeadCollideBody(Direction headdirec);
-    void MoveBody();
-    void SetFood();
-    Point RandomPosition();
-    bool ifCollideBody(Point pos);
-    bool ifGetFood();
+    void SetApperance();//
+    void SetSnake();//
+    void SetDirection(Ref* psender,Direction direc);//
+    void MoveStep();//
+    bool OutofRange();//
+    bool HeadCollideBody(Direction headdirec);//
+    void MoveBody();//
+    void SetFood();//
+    Point RandomPosition();//
+    bool ifCollideBody(Point pos);//
+    bool ifGetFood();//
     void AddBody();
     void SetGameScore(int gs);
     static Scene* GameScene();
-    void PauseGame();
-    void GameOver();
-    void StartGame();
-    void SetSnakeVisible(bool value);
+    void PauseGame();//
+    void GameOver();//
+    void StartGame();//
+    void SetSnakeVisible(bool value);//
     
 private:
     SnakeHead* head;
     Vector<Snake*> body;
-    Sprite* background;
-    Sprite* food;
-    MenuItemImage* butup;
-    MenuItemImage* butdown;
-    MenuItemImage* butleft;
-    MenuItemImage* butright;
+    Sprite* background;//
+    Sprite* food;//
+    MenuItemImage* butup;//
+    MenuItemImage* butdown;//
+    MenuItemImage* butleft;//
+    MenuItemImage* butright;//
     MenuItemImage* pausebutton;
     MenuItemImage* playbutton;
     Menu* menu;
     Label* gameover;
-    bool ifgameover;
+    bool ifgameover;// inGame에선 isGameover로 바뀜.
     Point lastbodyposi;
-    Size visiblesize;
-    bool movedflag;
+    Size visiblesize;//
+    bool movedflag;//
     
     
     

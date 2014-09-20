@@ -22,12 +22,8 @@ bool MainScene::init()
 
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 
-	//키보드 입력 모임
-	auto keylistener = EventListenerKeyboard::create();
-	keylistener->onKeyPressed = CC_CALLBACK_2(CKeypadLayer::onKeyPressed, this);
-	keylistener->onKeyReleased = CC_CALLBACK_2(CKeypadLayer::onKeyReleased, this);
-	_eventDispatcher->addEventListenerWithSceneGraphPriority(keylistener, this);
-
+	// (제외됨.) 키보드 입력 모임
+	
 	// 배경
 	BG = Sprite::create("BG.png");
 	BG->setPosition(Point(visibleSize.width / 2, visibleSize.height / 2));

@@ -1,8 +1,15 @@
 #ifndef __HANGULSNAKE_HEAD__
 #define __HANGULSNAKE_HEAD__
 
-#include <iostream>
+/*
+    한글 스네이크의 머리를 선언하는 코드.
+    다음 요소들이 선언되어 있다.
+    -Direction에 대한 enumeration
+    -머리의 위치에 대한 getter, setter
+    -그 외 cocos2d-x에 대한 init
+*/
 
+#include <iostream>
 #include "cocos2d.h"
 #include "HangulSnake.h"
 
